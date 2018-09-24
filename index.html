@@ -2,9 +2,179 @@
   <head>
   </head>
   <body>
-    <h1>Do you want to play a game?<h1>
-    <label for="name">What is your name?</label>
+    <h1>Gamma World Character Sheet<h1>
+
+    <h2>Name</h2>
+    <p>Name your character. What do others call you?</p>
+    <label for="name">Name</label>
     <input id="name">
+    <button id="nameme">Help</button>
+
+    <h2>Origins</h2>
+    <p>Roll character origins on the character origin table.</p>
+    <label for="origin1">Origin 1</label>
+    <input id="origin1">
+    <button id="origin1role">Role</button>
+    <label for="origin2">Origin 2</label>
+    <input id="origin2">
+    <button id="origin2role">Role</button>
+
+    <h2>Traits</h2>
+    <p>Record the traits of your two origins.</p>
+    <label for="trait1">Trait 1</label>
+    <input id="trait1">
+    <label for="trait2">Trait 2</label>
+    <input id="trait2">
+    <h2>Critical</h2>
+    <p>Select a critical of your choice at level 2 and then t level 6. When you score a critical hit ... </p>
+    <input id="critical2" type="radio"><label for=critical2></label>
+    <input id="critical6" type="radio"><label for=critical6></label>
+
+
+    <h2>Powers</h2>
+    <p>Record the novice power of your first origin, the novice power of your second origin , and if you are 3rd level or higher, the utility power of your choice.</p>
+    <label for="novice1">Novice Primary</label>
+    <input id="novice1">
+    <label for="novic21">Novice Secondary</label>
+    <input id="novice2">
+    <label for="utility3">Level Three Utility</label>
+    <input id="utility3">
+    <label for="expert5">Expert Primary Level Five</label>
+    <input id="expert5">
+    <label for="utility7">Level Seven Utility</label>
+    <input id="utility7">
+    <label for="expert9">Expert Secondary Level Nine</label>
+    <input id="expert9">
+
+    <h2>Ability Score and Modifier</h2>
+    <p>You get an 18 in the primary ability score of your first origin and a 16 for your second origin (20 if they match).</p>
+    <p>Roll 3d6 for each remaining score. Next, see the ability modifier chart for each score and enter that value + your level.
+    <label for="str">Strength</label>
+    <input id="str" class="ability">
+    <label for="StrMod">Str Mod</label>
+    <input id="StrMod">
+    <label for="dex">Dexterity</label>
+    <input id="dex" class="ability">
+    <label for="dexMod">Dex Mod</label>
+    <input id="dexMod">
+    <label for="wis">Wisdom</label>
+    <input id="wis" class="ability">
+    <label for="wisMod">Wis Mod</label>
+    <input id="wisMod">
+    <label for="con">Constitution</label>
+    <input id="con" class="ability">
+    <label for="conMod">Con Mod</label>
+    <input id="conMod">
+    <label for="int">intelligence</label>
+    <input id="int" class="ability">
+    <label for="intMod">Int Mod</label>
+    <input id="intMod">
+    <label for="cha">Charisma</label>
+    <input id="cha" class="ability">
+    <label for="chaMod">Cha Mod</label>
+    <input id="chaMod">
+
+    <h2>Skills</h2>
+    <p>Each origin provides a skill bonus, and you gain a +4 bonus to one random skill; see the skill bonus table. To make a skill check, roll a d20 and add your level, your ability score modifie for the skills key ability, any bonuses you have from the origin, and any bonuses or penalties from your gear, conditions, or from the situation.
+    <label for="bonus1">Bonus One</label>
+    <input id="bonus1">
+    <label for="skill1">Skill Name</label>
+    <input id="skill1">
+    <label for="check1">Skill Check</label>
+    <input id="check1">
+    <label for="bonus2">Bonus Two</label>
+    <input id="bonus2">
+    <label for="skill2">Skill Name</label>
+    <input id="skill2">
+    <label for="check2">Skill Check</label>
+    <input id="check2">
+    <label for="bonus3">Bonus Three</label>
+    <input id="bonus3">
+    <label for="skill3">Skill Name</label>
+    <input id="skill3">
+    <label for="check3">Skill Check</label>
+    <input id="check3">
+    <button id="skillsBtn">Add skills</button>
+
+    <h2>Gear</h2>
+    <p>Choose your armour and weapon. At least 1st level, you have one explorer's kit (and everything in it). You also make 1d4 + 1 rolls on the starting gear table. You can also trade in your explorer's kit for an extra roll, use the Get Gear button twice. </p>
+    <select id="gear1">
+      <option>Light armour +3 to AC</option>
+      <option>Medium armour +7 to AC</option>
+      <option>Shield shield +1 to AC</option>
+    </select>
+    <select id="gear2">
+      <option>Light melee </option>
+      <option>heavy melee </option>
+    </select>
+    <select id="gear2">
+      <option>Light ranged </option>
+      <option>heavy ranged </option>
+    </select>
+    <input id="gear4" value= "explorer's kit">
+    <input id="gear5">
+    <button id="gearBtn">Get some extra Gear</button>
+
+
+    <h2>Hit Points</h2>
+    <p>Determine your hit points and speed.</p>
+    <label for="hp">HP</label>
+    <input id="hp">
+    <label for="bloodied">Bloodied</label>
+    <input id="bloodied">
+    <p> Speed is 6 plus any modifiers for your origin.
+    <label for="speed">Speed</label>
+    <input id="speed">
+
+    <h2>Defense</h2>
+    <p>Determine your defenses. Your defenses are equal to 10 + your level + the better of two scores. Also for AC, add armour bonus + shield bonus, if any, and ony add Dex or Int if wearing light or no armour.</p>
+    <label for="ac">AC</label>
+    <input id="ac">
+    <label for="defmod">Modifier</label>
+    <input id="defmod">
+    <label for="fort">Fortitude</label>
+    <input id="fort">
+    <label for="fortmod">Modifier</label>
+    <input id="fortmod">
+    <label for="reflex">Reflex</label>
+    <input id="reflex">
+    <label for="reflexmod">Modifier</label>
+    <input id="reflexmod">
+    <label for="will">Will</label>
+    <input id="will">
+    <label for="willmod">Modifier</label>
+    <input id="willmod">
+
+    <h2>Attacks</h2>
+    <p>Your attack bonus is your ability modiefier + your level + accuracy bonus for the wapon or power. Your damage bonus uses the same ability modifier as the attack bonus + either your level or twice your level. Also fill in your initive score.
+    <label for="initiative">Initiative</label>
+    <input id="initiative">
+    <label for="attb1">Attack Bonus 1</label>
+    <input id="attb1">
+    <label for="item1">Item</label>
+    <input id="item1">
+    <label for="ddice1">Damage Dice</label>
+    <input id="ddice1">
+    <label for="dbonus1">Damage Bonus</label>
+    <input id="dbonus1">
+    <label for="attb2">Attack Bonus 2</label>
+    <input id="attb2">
+    <label for="item2">Item</label>
+    <input id="item2">
+    <label for="ddice2">Damage Dice</label>
+    <input id="ddice2">
+    <label for="dbonus2">Damage Bonus</label>
+    <input id="dbonus2">
+    <label for="attb3">Attack Bonus 3</label>
+    <input id="attb3">
+    <label for="item3">Item</label>
+    <input id="item3">
+    <label for="ddice3">Damage Dice</label>
+    <input id="ddice3">
+    <label for="dbonus3">Damage Bonus</label>
+    <input id="dbonus3">
+
+
     <button type="submit" id="rollChar" onclick="buildChar();">Roll my Character </button>
     <script src="characters.js"></script>
   </body>
